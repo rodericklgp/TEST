@@ -11,17 +11,17 @@ namespace XUnitTest
             Assert.Equal(4, Add(2, 2));
         }
 
-        [Fact(DisplayName = "ÏÔÊ¾ÎªÍ¨¹ý²âÊÔ")]
+        [Fact(DisplayName = "æ˜¾ç¤ºä¸ºé€šè¿‡æµ‹è¯•")]
         public void PassingTest()
         {
             Assert.Equal(4, Add(2, 2));
         }
-        [Fact(Skip = "ÏÔÊ¾ÎªÌø¹ý²âÊÔ")]
+        [Fact(Skip = "æ˜¾ç¤ºä¸ºè·³è¿‡æµ‹è¯•")]
         public void FailingTest()
         {
             Assert.Equal(5, Add(2, 2));
         }
-        [Fact(DisplayName = "ÏÔÊ¾ÎªÌø¹ý²âÊÔ12344")]
+        [Fact(DisplayName = "æ˜¾ç¤ºä¸ºè·³è¿‡æµ‹è¯•12344")]
         public void FailingTest1()
         {
             Assert.Equal(5, Add(2, 2));
@@ -29,6 +29,7 @@ namespace XUnitTest
 
         [Theory]
         [InlineData(1, 2)]
+        [InlineData(2, 1)]
         public void TheoryPassingTest(int a, int b)
         {
             Assert.Equal(3, Add(a, b));
