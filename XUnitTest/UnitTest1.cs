@@ -21,7 +21,7 @@ namespace XUnitTest
         {
             Assert.Equal(5, Add(2, 2));
         }
-        [Fact(DisplayName = "显示为跳过测试12344")]
+        [Fact(DisplayName = "显示为跳过测试1234455")]
         public void FailingTest1()
         {
             Assert.Equal(5, Add(2, 2));
@@ -29,6 +29,7 @@ namespace XUnitTest
 
         [Theory]
         [InlineData(1, 2)]
+        [InlineData(3, 0)]
         public void TheoryPassingTest(int a, int b)
         {
             Assert.Equal(3, Add(a, b));
